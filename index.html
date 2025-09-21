@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Renkler</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="ciceonun ilk sitesi">
+    <meta name="keywords" content="blabla , ciceo">
+    <meta name="author" content="furkan ciceo furkanciceoo@gmail.com">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="refresh" content="120">
+</head>
+<body style="background-color: beige; animation: forwards;">
+    <!-- body icinde yazilan style parametresi alsinda css kodu olarak gecer ama 
+     html kodları icinde css kodları yazmak kullanisli degildir bundan dolayi bu 
+     kodlar ayri dosyalar icinde tutulur-->
+    <h1>merhabalar aq</h1>
+    <h2>bu biraz daha kucuk</h2>
+    <hr>
+    <h2>yatay cizgi sonrasi hal</h2>
+    <h3>gayet guzel oldu bence kralParator</h3>
+    <img src="meFoto.webp" alt="really me?">
+    <audio src="SpongeBob SquarePants_ Closing Theme Song (INCOMPLETE).mp4" controls> </audio>
+    <!-- div ve span-->
+    <div style="background-color: blue;"> div etiketi bulundugu satirda her yeri isgal eder</div>
+    <span style="background-color: blue;"> span etiketi sadece kapladigi alandan sorumludur </span>
+    <!-- meta etiketleri ....... META ETİKETLERİ MUTLAKA HEAD ICINDE YAZILMALI
+      meta etiketleri html de metadata sini tanimlamak icin kullanilir.
+      bu bilgiler dogrudan sayfa icerigi olarak gorunmez ama tarayicilar arama mo
+      torlari ve sosyal medya platformlari icin onemlidir. -->
+
+      <!-- button eitketi: her zaman body etiketinin icinde yer alır  -->
+       <hr>
+       <a href="https://google.com" target="_blank" ><button disabled >
+        tikla <!-- bir butonu aktiflestirmek icin bir a etiketinin icine yerlestirmek gerekir.-->
+       </button>
+       </a>
+       <!-- javascript kodları "<script>" etiketi icerisinde yazilabilir 
+        ama profesyonel sitelerde javascript kodlari html ve css kodlarindan farkli 
+        alanlarda tutulur -->
+        <script>
+
+        </script> 
+        <!-- form etiketi  -->
+        <form action="bla.py"  > 
+            <!-- yukaridaki action parametresi ise bizim arkada calisan backend dosyamizi 
+             anlatir. yani bu form ile elde edilen bilgilerin arka tarafra hangi backend 
+             dosyasina gidecegini soyler -->
+            <label for="isim"> Ad:</label>
+            <input type="text" name="userName" id="isim" 
+            placeholder="please enter your name" required>
+            <!-- ustte olusturulan label i inputa atamak icin
+             once input a bir id atadik daha sonra label in parametresi olan 
+             for icinde bu id yi kullandik bu sekilde id ile input u birbirine atamis olduk
+             input icinde bulunan type parametresi input un hangi yapida olacagini tanimlarken
+             name parametresi ise kullanicinin girdigi veriyi tutan degiskeni olusturur ve 
+             buna isim vermis olur. aslinda bu parametre daha sonra alinan text in 
+             backend kisminda kullanilabilmesini saglayacak -->
+
+             <!-- required parametresi ile eger submit islemi istenilen bilgiler
+              doldurulmadan yapilmak istenirse hata mesaji vermeye yarar -->
+             <br><br>
+             <input type="reset">
+             <input type="submit">
+             <!-- yukaridaki input type lar aslinda bir butonu temsil eder.
+              reset type bosluklardaki bilgileri silmeye yararken 
+              submit type ise girilen kullanici bilgilerini en basta action
+              parametresinde verilen dosyanin icine gonderir. -->
+        </form>
+</body>
+</html>
